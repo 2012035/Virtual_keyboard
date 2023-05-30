@@ -43,8 +43,8 @@ while True:
         if (lenght<=30):
             cv2.circle(image,(int((x+x2)/2),int((y+y2)/2)),10,(0,255,0),cv2.FILLED)
 
-        vollen=np.interp(lenght,[20,180],[minvol,maxvol])
-        if(length1>=50):
+        vollen=np.interp(lenght,[30,150],[minvol,maxvol])
+        if(length1>=50  ):
             volume.SetMasterVolumeLevel(vollen, None)
 
 
